@@ -228,6 +228,7 @@ button {
   width: 100%;
   float: left;
   background-color: #f8f9fa!important;
+  border-bottom: 1px solid #e0e0e0;
 }
 .header_left{
     width: 50%;
@@ -235,20 +236,37 @@ button {
 }
 .header_right{
     width: 50%;
-    float: left; 
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 40px 0 40px;
 }
 .banner_img{
+    max-width: 100%;
+    max-height: 380px;
     width: 100%;
-    float: left; 
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
 }
 
 .logo {
-    width: 25%;
+    width: auto;
     float: left;
+}
+.logo img {
+    max-height: 40px; /* keep logo small so navbar looks normal height */
+    width: auto;
 }
 
 .bg-light {
     background-color: transparent!important;
+}
+.navbar {
+    padding-top: 0.15rem;
+    padding-bottom: 0.15rem;
+    min-height: 56px; /* compact, normal navbar height */
 }
 .navbar-expand-lg .navbar-nav .nav-link {
     padding-right: 13px;
@@ -644,9 +662,13 @@ button {
     float: left;
 }
 .image_7{
-    width: 100%;
-    float: left;
-    text-align: center;
+    display: block;
+    width: 160px;
+    height: 160px;
+    margin: 0 auto;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #84bd00; /* KCB green outline for definite shape */
 }
 .readable_text{
     width: 100%;
